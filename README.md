@@ -18,11 +18,19 @@ brew install haskell-stack
 
 ## Running
 ```
-cabal run
+stack exec hangman-server-exe
 ```
 
 ## Testing
 ```
-cabal test
+stack test
 ```
+
+## Adding new packages
+
+Search hackage.haskell.org for package and look at top left corner for package name (and version).
+
+Edit hangman-server.cabal with your favourite editor and add the package name to
+the `build-depends:` field of the library section. Then run `stack build`
+
 
